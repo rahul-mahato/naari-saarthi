@@ -651,7 +651,7 @@
             backdiv.classList.add('ecorner-orange-background');
             nearbyShg.classList.remove('d-none');
             buttonArea.classList.add('d-none');
-            document.querySelector('.agents').classList.remove('d-none');
+            
 
         }
         function nearbyMicroFin() {
@@ -659,21 +659,21 @@
             backdiv.classList.add('ecorner-orange-background');
             nearbyMf.classList.remove('d-none');
             buttonArea.classList.add('d-none');
-            document.querySelector('.agents').classList.remove('d-none');
+            
         }
         function nearbyInvestors() {
             backdiv.classList.remove('bg-dark');
             backdiv.classList.add('ecorner-orange-background');
             nearbyInv.classList.remove('d-none');
             buttonArea.classList.add('d-none');
-            document.querySelector('.agents').classList.remove('d-none');
+            
         }
         function nearbyBanks() {
             backdiv.classList.remove('bg-dark');
             backdiv.classList.add('ecorner-orange-background');
             nearbyBank.classList.remove('d-none');
             buttonArea.classList.add('d-none');
-            document.querySelector('.agents').classList.remove('d-none');
+            
         }
         function back() {
             backdiv.classList.add('bg-dark');
@@ -692,6 +692,7 @@
 
             alert("Your idea has been shared : " + text.value);
             console.log(idea);
+            document.querySelector('.agents').classList.remove('d-none');
 
         }
         function hindi() {
