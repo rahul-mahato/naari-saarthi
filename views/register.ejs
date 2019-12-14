@@ -1,7 +1,14 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
 <section class="navbar-head">
     <nav class="navbar navbar-expand-md navbar-light py-3">
         <div class="container">
-            <a href="/" class="navbar-brand" style="text-decoration: none;"><img src="/images/001.png" alt="" srcset="" width="7%" class="px-2">Naari Saarthi</a>
+            <a href="/" class="navbar-brand" style="text-decoration: none;"><img src="/images/001.png" alt="" srcset=""
+                    width="7%" class="px-2">Naari Saarthi</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,191 +27,277 @@
 
 
 <section class="login">
-        <div class="row signup-background">
-                <div class="col-lg-6 py-5 text-center">
-                    <div class="py-5">
-                        &nbsp;
-                    </div>
-                    <h3 class="my-5 mx-4 text-white" style="font-family: 'Times New Roman', Times, serif; ">
-        
-                        “ And one day she discovered that she was fierce, and strong, and full of fire, and that not even she
-                        could hold herself back because her passion burned brighter than her fears. ”
-    
-                </h3>
-
-                    <div class="py-5">
-                        &nbsp;
-                    </div>
-                    <div class="mc-5 px-5"> 
-                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/dkw3aHFwkl8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
-                    </div>
-                    
-                    
-                        
-                    
-                </div>
-                
-                <div class=" col-sm-12 col-lg-5 m-5 px-5  py-5  bg-white text-center" style="border: solid 2px">
-                    <img src="/images/registration6.png" style="width: 200px;height: auto;">
-                    <h1 class="pb-4 text-font"><b>Register Here</b></h1>
-                    <% include ./partials/messages %>
-                    <form  action="/users/register" method="POST" >
-                        
-                        <div class="row">
-                            
-                            
-                            <div class="input-group col-sm-12 my-2 row">
-        
-                                <label class=" col-2" for="name" ><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> </label>
-                                <input name="name" type="Name" id="name" class="form-control rounded" placeholder="Name" value="<%= typeof name != 'undefined' ? name: '' %>">
-                            </div>
-        
-                            <div class="input-group my-2 col-sm-12 row">
-        
-                                <label class=" col-2" for="email"><i class="fa  fa-envelope-square fa-2x px-1 "></i></label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email"  value="<%= typeof email != 'undefined' ? email : ''%>">
-                            </div>
-                            <div class="input-group col-sm-12 my-2 row">
-        
-                                <label for="password" class="col-2"><i class="fa fa-key fa-2x px-1"
-                                        aria-hidden="true"></i></label>
-                                <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password"  value="<%= typeof password != 'undefined' ? password : ''%>">
-                            </div>
-                            <div class="input-group col-sm-12 my-2 row">
-                                <label for="password2" class="col-2"><i class="fa fa-key fa-2x px-1"   
-                                        aria-hidden="true"></i></label>
-        
-                                <input type="password" class="form-control" name="password2" id="password2" value="<%= typeof password2 != 'undefined' ? password2 : ''%>"
-                                    placeholder="Enter your password again">
-                            </div>
-        
-        
-                            <div class="input-group col-sm-12 my-2 row">
-        
-                                <label class=" col-2" for="age"><i class="fa  fa-user fa-2x px-1 "></i></label>
-                                <input type="text" class="form-control" name="age" id="age" placeholder="Enter your age" value="<%= typeof age != 'undefined' ? age : ''%>">
-                            </div>
-                            <div class="input-group  my-3 row">
-                                <div class="col-3 ml-auto">
-                                    <h6>
-                                        Gender
-                                    </h6>
-                                </div>
-                                <div class="col-sm-3 ">
-                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                                    <label class="form-check-label " for="male">
-                                        <i class="fa fa-mars" aria-hidden="true"></i> Male
-                                    </label>
-                                </div>
-                                <div class="col-sm-3">
-                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                                    <label class="form-check-label " for="female">
-                                        <i class="fa fa-venus" aria-hidden="true"></i> Female
-                                    </label>
-        
-        
-                                </div>
-
-                                <div class="col-sm-3">
-                                    <input class="form-check-input" type="radio" name="gender" id="other" value="other">
-                                    <label class="form-check-label " for="other">
-                                        <i class="fa fa-transgender" aria-hidden="true"></i>Other
-                                    </label>
-        
-        
-                                </div>
-        
-        
-        
-                            </div>
-                            <div class="input-group  my-2 col-sm-12 row">
-                                <label for="education" class="col-2"><i class="fa fa-graduation-cap fa-2x px-1"
-                                        aria-hidden="true"></i></label>
-        
-        
-                                <select id="education" class="form-control" name="education">
-                                    <option selected disabled>Education</option>
-                                    <option value="upto 10"  >Upto 10</option>
-                                    <option value="Completed 12">Completed 12</option>
-                                    <option value="Graduate">Graduate</option>
-                                    <option value="Post Graduate">Post Graduate</option>
-                                </select>
-                            </div>
-                            <div class="input-group col-sm-12 my-2 row">
-                                <label for="sectors" class="col-2"><i class="fa  fa-tags fa-2x px-1"
-                                        aria-hidden="true"></i></label>
-        
-        
-                                <select id="sectors" name="interestSectors" class="form-control">
-                                    <option selected disabled>Interested Sectors</option>
-                                    <option value="Women Empowerment">Women Empowerment</option>
-                                    <option value="Handicraft">Handicraft</option>
-                                    <option value="Pottery">Pottery</option>
-                                    <option value="Handloom">Handloom</option>
-                                    <option value="Entreprenuership">Entreprenuership</option>
-                                </select>
-                            </div>
-                            <div class="input-group col-sm-12 my-3 row">
-        
-        
-        
-                                <span class="col-2">
-                                    <i class="fa fa-briefcase fa-2x " aria-hidden="true"> </i>
-                                </span>
-                                <label class=" col-sm-3 " for="Working">Working : </label>
-                                <div class="col-sm-3 ">
-                                    <input class="form-check-input" type="radio" name="working" id="yes" value="yes"
-                                        checked>
-                                    <label class="form-check-label " for="yes">
-                                        Yes
-                                    </label>
-                                </div>
-                                <div class="col-sm-3">
-                                    <input class="form-check-input" type="radio" name="working" id="No" value="No">
-                                    <label class="form-check-label " for="No">
-                                        No
-                                    </label>
-        
-        
-                                </div>
-        
-        
-        
-                            </div>
-        
-        
-                            <div class="input-group col-sm-12 my-2 row">
-        
-                                <label for="phoneno" class="col-2"><i class="px-1 fa fa-phone fa-2x " aria-hidden="true">
-                                    </i></label>
-                                <input type="number" class="form-control" name="phoneno" id="phoneno" placeholder="Phone Number" >
-                            </div>
-                            <div class="input-group col-sm-12 my-2 row">
-        
-                                <label for="location" class="col-2"><i class="px-1 fa fa-map-marker fa-2x " aria-hidden="true">
-                                    </i></label>
-                                <input type="text" class="form-control" name="location" id="location" placeholder="Address" value="<%= typeof location != 'undefined' ? location : ''%>">
-                            </div>
-                            <div class="input-group col-sm-12 my-2 row ">
-        
-                                <label for="interestInEntp" class="col-2"><i class="fa fa-handshake-o fa-2x px-1"
-                                        aria-hidden="true"></i></label>
-        
-        
-                                <select id="interestInEntp"  name="interestInEntp" class="form-control">
-                                    <option selected disabled>Interested in Entreprenuership</option>
-                                    <option>Yes</option>
-                                    <option>No</option>
-                                </select>
-                            </div>
-        <div class="col-sm-12 text-center">
-            <button type="submit" class="my-3 border btn btn-light col-4 text-white"  style="background: rgb(255, 77, 89);">Submit</button>
-        
-        </div>
-                        </div>
-        
-                    </form>
-                </div>
-        
+    <div class="row signup-background">
+        <div class="col-lg-6 py-5 text-center">
+            <div class="py-5">
+                &nbsp;
             </div>
+            <h3 class="my-5 mx-4 text-white" style="font-family: 'Times New Roman', Times, serif; ">
+
+                “ And one day she discovered that she was fierce, and strong, and full of fire, and that not even she
+                could hold herself back because her passion burned brighter than her fears. ”
+
+            </h3>
+
+            <div class="py-5">
+                &nbsp;
+            </div>
+            <div class="mc-5 px-5 justify-content-center text-white">
+                <h3>How to create an E-Mail</h3>
+                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/dkw3aHFwkl8"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+
+
+
+        </div>
+
+        <div class=" col-sm-12 col-lg-5 m-5 px-5  py-5  bg-white text-center" style="border: solid 2px">
+            <img src="/images/registration6.png" style="width: 200px;height: auto;">
+            <h1 class="pb-4 text-font"><b>Register Here</b></h1>
+            <% include ./partials/messages %>
+            <form action="/users/register" method="POST">
+
+                <div class="row">
+
+
+                    <div class="input-group col-sm-12 my-2 row">
+
+                        <label class=" col-2" for="name"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                        </label>
+                        <input name="name" type="Name" id="name" class="form-control rounded" placeholder="Name"
+                            value="<%= typeof name != 'undefined' ? name: '' %>">
+                    </div>
+
+                    <div class="input-group my-2 col-sm-12 row">
+
+                        <label class=" col-2" for="email"><i class="fa  fa-envelope-square fa-2x px-1 "></i></label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email"
+                            value="<%= typeof email != 'undefined' ? email : ''%>">
+                    </div>
+                    <div class="input-group col-sm-12 my-2 row">
+
+                        <label for="password" class="col-2"><i class="fa fa-key fa-2x px-1"
+                                aria-hidden="true"></i></label>
+                        <input type="password" class="form-control" name="password" id="password"
+                            placeholder="Enter your password"
+                            value="<%= typeof password != 'undefined' ? password : ''%>">
+                    </div>
+                    <div class="input-group col-sm-12 my-2 row">
+                        <label for="password2" class="col-2"><i class="fa fa-key fa-2x px-1"
+                                aria-hidden="true"></i></label>
+
+                        <input type="password" class="form-control" name="password2" id="password2"
+                            value="<%= typeof password2 != 'undefined' ? password2 : ''%>"
+                            placeholder="Enter your password again">
+                    </div>
+
+
+                    <div class="input-group col-sm-12 my-2 row">
+
+                        <label class=" col-2" for="age"><i class="fa  fa-user fa-2x px-1 "></i></label>
+                        <input type="text" class="form-control" name="age" id="age" placeholder="Enter your age"
+                            value="<%= typeof age != 'undefined' ? age : ''%>">
+                    </div>
+                    <div class="input-group  my-3 row">
+                        <div class="col-3 ml-auto">
+                            <h6>
+                                Gender
+                            </h6>
+                        </div>
+                        <div class="col-sm-3 ">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label " for="male">
+                                <i class="fa fa-mars" aria-hidden="true"></i> Male
+                            </label>
+                        </div>
+                        <div class="col-sm-3">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label " for="female">
+                                <i class="fa fa-venus" aria-hidden="true"></i> Female
+                            </label>
+
+
+                        </div>
+
+
+                        <div class="col-sm-3">
+                            <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                            <label class="form-check-label " for="other">
+                                <i class="fa fa-transgender" aria-hidden="true"></i>Other
+                            </label>
+
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="input-group col-sm-12 my-2 row">
+                        <label class="col-2"> <i class="fa fa-address-card  fa-2x px1"></i> </label>
+                        <input type="text" class="form-control" name="adhaar" required id="adhaar"
+                            placeholder="Adhaar Number Here">
+                        
+
+
+                    </div>
+                    <div class="input-group col-sm-12 my-2 row">
+
+                        <label class="col-2"> <i class="fa fa-file fa-2x px1"></i> </label>
+                        <div class="input-group col-10 mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02" required>
+                                <label class="custom-file-label" for="inputGroupFile02"
+                                    aria-describedby="inputGroupFileAddon02">Choose file</label>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                            </div>
+                        </div>
+                        <div class="col-12 row  text-right">
+
+                            <p class="lead " style="font-size: 14px;padding-left: 100px;"> Please Upload a document for e-KYC verification</p>
+                        </div>
+                    </div>
+                    <div class="input-group  my-2 col-sm-12 row">
+                        <label for="education" class="col-2"><i class="fa fa-graduation-cap fa-2x px-1"
+                                aria-hidden="true"></i></label>
+
+
+                        <select id="education" class="form-control" name="education">
+                            <option selected disabled>Education</option>
+                            <option value="upto 10">Upto 10</option>
+                            <option value="Completed 12">Completed 12</option>
+                            <option value="Graduate">Graduate</option>
+                            <option value="Post Graduate">Post Graduate</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group col-sm-12 my-2 row ">
+                        <label for="sectors" class="col-12 text-left align-self-center" style="letter-spacing: 2px;"><i
+                                class="fa fa-tags px-1 fa-2x "></i>
+                            <h5 style="display: inline;"> Interested Sectors</h5>
+                        </label>
+                        <label for="sectors" class="lead col-7" style="letter-spacing: 2px;"></label>
+                        <div class="col-12"></div>
+                        <div class="col-2"></div>
+                        <div class="checkbox col-sm-12 row">
+                            <div class="col-sm-2 text-right">
+                                <input type="checkbox" value="Women Empowerment">
+                            </div>
+                            <div class="col-sm-9 text-left">
+
+                                <label>Women Empowerment</label>
+                            </div>
+                        </div>
+
+                        <div class="checkbox col-sm-12 row">
+                            <div class="col-sm-2 text-right">
+                                <input type="checkbox" value="Women Empowerment">
+                            </div>
+                            <div class="col-sm-9 text-left">
+
+                                <label>Handicraft</label>
+                            </div>
+                        </div>
+
+                        <div class="checkbox col-sm-12 row">
+                            <div class="col-sm-2 text-right">
+                                <input type="checkbox" value="Pottery">
+                            </div>
+                            <div class="col-sm-9 text-left">
+
+                                <label>Pottery</label>
+                            </div>
+                        </div>
+                        <div class="checkbox col-sm-12 row">
+                            <div class="col-sm-2 text-right">
+                                <input type="checkbox" value="Handloom">
+                            </div>
+                            <div class="col-sm-9 text-left">
+
+                                <label>Handloom</label>
+                            </div>
+                        </div>
+                        <div class="checkbox col-sm-12 row">
+                            <div class="col-sm-2 text-right">
+                                <input type="checkbox" value="Entreprenuership">
+                            </div>
+                            <div class="col-sm-9 text-left">
+
+                                <label>Entreprenuership</label>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="input-group col-sm-12 my-3 row">
+
+
+
+                        <span class="col-2">
+                            <i class="fa fa-briefcase fa-2x " aria-hidden="true"> </i>
+                        </span>
+                        <label class=" col-sm-3 " for="Working">Working : </label>
+                        <div class="col-sm-3 ">
+                            <input class="form-check-input" type="radio" name="working" id="yes" value="yes" checked>
+                            <label class="form-check-label " for="yes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="col-sm-3">
+                            <input class="form-check-input" type="radio" name="working" id="No" value="No">
+                            <label class="form-check-label " for="No">
+                                No
+                            </label>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="input-group col-sm-12 my-2 row">
+
+                        <label for="phoneno" class="col-2"><i class="px-1 fa fa-phone fa-2x " aria-hidden="true">
+                            </i></label>
+                        <input type="number" class="form-control" name="phoneno" id="phoneno"
+                            placeholder="Phone Number">
+                    </div>
+                    <div class="input-group col-sm-12 my-2 row">
+
+                        <label for="location" class="col-2"><i class="px-1 fa fa-map-marker fa-2x " aria-hidden="true">
+                            </i></label>
+                        <input type="text" class="form-control" name="location" id="location" placeholder="Address"
+                            value="<%= typeof location != 'undefined' ? location : ''%>">
+                    </div>
+                    <div class="input-group col-sm-12 my-2 row ">
+
+                        <label for="interestInEntp" class="col-2"><i class="fa fa-handshake-o fa-2x px-1"
+                                aria-hidden="true"></i></label>
+
+
+                        <select id="interestInEntp" name="interestInEntp" class="form-control">
+                            <option selected disabled>Interested in Entreprenuership</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <button type="submit" class="my-3 border btn btn-light col-4 text-white"
+                            style="background: rgb(255, 77, 89);">Submit</button>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
 </section>

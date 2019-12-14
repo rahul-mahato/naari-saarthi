@@ -43,7 +43,7 @@ router.post('/register', async(req, res) => {
 
     let errors = [];
 
-    if (!name || !email || !password || !education || !gender || !interestInEntp || !interestSectors || !location || !working || !age ) {
+    if (!name || !email || !password || !education || !gender || !interestInEntp || !location || !working || !age ) {
         errors.push({ msg: 'Please Fill in all the fields ' })
     }
     if (password !== password2) {
@@ -56,14 +56,12 @@ router.post('/register', async(req, res) => {
     if (errors.length > 0) {
         console.log(errors);
         res.render('register',{
-
-
             errors,
             name,
             email,
             location,
             age
-        }        )
+        })
     }
     else {
 

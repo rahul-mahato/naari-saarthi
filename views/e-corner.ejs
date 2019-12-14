@@ -1,17 +1,20 @@
 <section class="navbar-head">
     <nav class="navbar navbar-expand-md navbar-light py-3">
         <div class="container">
-            <a href="/dashboard" class="navbar-brand" style="text-decoration: none;"><img src="/images/001.png" alt="" srcset="" width="7%" class="px-2">Naari Saarthi</a>
+            <a href="/dashboard" class="navbar-brand" style="text-decoration: none;"><img src="/images/001.png" alt=""
+                    srcset="" width="7%" class="px-2">Naari Saarthi</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a href="/dashboard" class="nav-link">Dashboard</a></li>
-                    <li class="nav-item text-center" style="width: 80px;"><a href="/e-corner" class="nav-link">E-Corner</a></li>
-                    <li class="nav-item" style="width: 100px"><a href="/seller-zone" class="nav-link">Seller Zone</a></li>
+                    <li class="nav-item text-center" style="width: 80px;"><a href="/e-corner"
+                            class="nav-link">E-Corner</a></li>
+                    <li class="nav-item" style="width: 100px"><a href="/seller-zone" class="nav-link">Seller Zone</a>
+                    </li>
                     <li class="nav-item"><a href="/sectors" class="nav-link">Sectors</a></li>
-                    
+
                     <li class="nav-item"><a href="/users/logout" class="nav-link">Logout</a></li>
                 </ul>
             </div>
@@ -19,162 +22,173 @@
     </nav>
 </section>
 
-    <section class="dash-hero-area" style="height: 100vh;">
-            <div class="container text-center">
-                <div class="overlay">
-                    <div class="row w-100 justify-content-center p-4">
-                        <div class="col-md-3 align-self-center">
-                            </div>
-                        <div class="col-md-6 align-self-center pl-5" data-aos="fade-up"> 
-                            <img class="profile pt-5 mt-4" src="/images/Profile.PNG" alt="" srcset="" width="45%">
-                            <h3 class=" display-4 font-weight-bold" style="margin-top: -40px;">Welcome To E-Corner</h3>
-                            <p class="lead">Share Your Ideas</p>
-                            <p class="lead font-weight-normal" style="font-size: 20px;">Your Level</p>
-                            <div class="level"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
-                            <div class="arrow-down py-4"><i class="fas fa-chevron-down fa-2x"></i></div>
-                        </div>
-                        <div class="col-md-3"></div>
-                        <div class="py-5"></div>
-                    </div>
+<section class="dash-hero-area" style="height: 100vh;">
+    <div class="container text-center">
+        <div class="overlay">
+            <div class="row w-100 justify-content-center p-4">
+                <div class="col-md-3 align-self-center">
                 </div>
+                <div class="col-md-6 align-self-center pl-5" data-aos="fade-up">
+                    <img class="profile pt-5 mt-4" src="/images/Profile.PNG" alt="" srcset="" width="45%">
+                    <h3 class=" display-4 font-weight-bold" style="margin-top: -40px;">Welcome To E-Corner</h3>
+                    <p class="lead">Share Your Ideas</p>
+                    <p class="lead font-weight-normal" style="font-size: 20px;">Your Level</p>
+                    <div class="level"><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                            class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                    <div class="arrow-down py-4"><i class="fas fa-chevron-down fa-2x"></i></div>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="py-5"></div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
 <section class="agent-choice justify-content-center row bg-dark">
-        <div class="row col-sm-12 justify-content-center container">
+    <div class="row col-sm-12 justify-content-center container">
 
-            <div class="col-sm-12 row justify-content-center py-5 bg-dark" id="funcdiv">
-                <div id="ShareYourIdea" class="col-md-8 mt-5 text-center text-white d-none">
-                    <h5 class="py-2 font-weight-bold">
-                        Share Your Idea
-                    </h5>
-                    <form>
-                        <textarea  class="textarea" name="idea" id="ideaText" rows="4" cols="30"></textarea><br>
-                    </form>
-                    <div class="record-mic row justify-content-center">
-                        <div class="col text-white">
-                        <button class="btn btn-dark rounded-circle" onclick="rmic()"><i class="fas fa-microphone fa-2x rounded-circle"></i></button>
-                        <p class="lead text-muted text-white" style="color: white  !important;">To record instead click the mic!</p>
+        <div class="col-sm-12 row justify-content-center py-5 bg-dark" id="funcdiv">
+            <div id="ShareYourIdea" class="col-md-8 mt-5 text-center text-white d-none">
+                <h5 class="py-2 font-weight-bold">
+                    Share Your Idea
+                </h5>
+                <form>
+                    <textarea class="textarea" name="idea" id="ideaText" rows="4" cols="30"></textarea><br>
+                </form>
+                <div class="record-mic row justify-content-center">
+                    <div class="col text-white">
+                        <button class="btn btn-dark rounded-circle" onclick="rmic()"><i
+                                class="fas fa-microphone fa-2x rounded-circle"></i></button>
+                        <p class="lead text-muted text-white" style="color: white  !important;">To record instead click
+                            the mic!</p>
                     </div>
                 </div>
-                    <div class="row justify-content-center recording-mic d-none" onclick="rddmic()">
-                        <div class="col text-white">
-                        <button class="btn btn-warning rounded-circle"><i class="fas fa-microphone fa-2x rounded-circle"></i></button>
-                        <p class="lead text-muted text-white" style="color: white  !important;">To stop recording click the mic again!</p>
+                <div class="row justify-content-center recording-mic d-none" onclick="rddmic()">
+                    <div class="col text-white">
+                        <button class="btn btn-warning rounded-circle"><i
+                                class="fas fa-microphone fa-2x rounded-circle"></i></button>
+                        <p class="lead text-muted text-white" style="color: white  !important;">To stop recording click
+                            the mic again!</p>
                     </div>
                 </div>
-                    <div class="row justify-content-center recorded-mic d-none">
-                        <div class="col text-white">
-                        <button class="btn btn-success rounded-circle"><i class="fas fa-microphone fa-2x rounded-circle"></i></button>
-                        <p class="lead text-muted text-white" style="color: white  !important;">Recording successfully saved!</p>
+                <div class="row justify-content-center recorded-mic d-none">
+                    <div class="col text-white">
+                        <button class="btn btn-success rounded-circle"><i
+                                class="fas fa-microphone fa-2x rounded-circle"></i></button>
+                        <p class="lead text-muted text-white" style="color: white  !important;">Recording successfully
+                            saved!</p>
                     </div>
                 </div>
 
-                    <button class="btn btn-info my-2" onclick="ideashare()">Submit</button>
-                    <button class="btn btn-light  my-2" onclick="back()">Back</button>
+                <button class="btn btn-info my-2" onclick="ideashare()">Submit</button>
+                <button class="btn btn-light  my-2" onclick="back()">Back</button>
+            </div>
+            <div id="NearbySHG" class="col-md-8 mt-5 justify-content-center row d-none ">
+                <h5 class="col-5 text-white text-center py-2 font-weight-bold">
+                    Nearby SHG
+                </h5>
+                <div class="col-sm-12">
+
+                    <iframe width="100%" height="250" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCZB0Xb0NHCfdEi8DpZGImUTHT80c9UpBk&q=nearby+self+help+group"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <div id="NearbySHG" class="col-md-8 mt-5 justify-content-center row d-none ">
-                    <h5 class="col-5 text-white text-center py-2 font-weight-bold">
-                        Nearby SHG
-                    </h5>
-                    <div class="col-sm-12">
+                <button class="btn btn-light my-3" onclick="back()">Back</button>
 
-                        <iframe width="100%" height="250" frameborder="0" style="border:0"
-                            src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCZB0Xb0NHCfdEi8DpZGImUTHT80c9UpBk&q=nearby+self+help+group"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <button class="btn btn-light my-3" onclick="back()">Back</button>
+            </div>
+            <div id="NearbyMF" class="col-md-8 mt-5 text-center  justify-content-center row d-none">
+                <h5 class="col-5 text-white text-center">
+                    Nearby Micro Finance
+                </h5>
+                <div class="col-sm-12">
 
+                    <iframe width="100%" height="250" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCZB0Xb0NHCfdEi8DpZGImUTHT80c9UpBk&q=nearby+micro+finance"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <div id="NearbyMF" class="col-md-8 mt-5 text-center  justify-content-center row d-none">
-                    <h5 class="col-5 text-white text-center">
-                        Nearby Micro Finance
-                    </h5>
-                    <div class="col-sm-12">
+                <button class="btn btn-light my-3" onclick="back()">Back</button>
+            </div>
+            <div id="NearbyINV" class="col-md-8 mt-5 text-center justify-content-center row d-none">
+                <h5 class="col-5 text-white text-center py-2 font-weight-bold">
+                    Nearby Investors
+                </h5>
+                <div class="col-sm-12">
 
-                        <iframe width="100%" height="250" frameborder="0" style="border:0"
-                            src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCZB0Xb0NHCfdEi8DpZGImUTHT80c9UpBk&q=nearby+micro+finance"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <button class="btn btn-light my-3" onclick="back()">Back</button>
+                    <iframe width="100%" height="250" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCZB0Xb0NHCfdEi8DpZGImUTHT80c9UpBk&q=nearby+investors"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <div id="NearbyINV" class="col-md-8 mt-5 text-center justify-content-center row d-none">
-                    <h5 class="col-5 text-white text-center py-2 font-weight-bold">
-                        Nearby Investors
-                    </h5>
-                    <div class="col-sm-12">
+                <button class="btn btn-light my-3" onclick="back()">Back</button>
 
-                        <iframe width="100%" height="250" frameborder="0" style="border:0"
-                            src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCZB0Xb0NHCfdEi8DpZGImUTHT80c9UpBk&q=nearby+investors"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <button class="btn btn-light my-3" onclick="back()">Back</button>
+            </div>
+            <div id="NearbyBNK" class="col-md-8 mt-5 text-center justify-content-center row d-none">
+                <h5 class="col-5 text-white text-center py-2 font-weight-bold">
+                    Nearby Banks
+                </h5>
+                <div class="col-sm-12">
 
+                    <iframe width="100%" height="250" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCZB0Xb0NHCfdEi8DpZGImUTHT80c9UpBk&q=nearby+banks"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <div id="NearbyBNK" class="col-md-8 mt-5 text-center justify-content-center row d-none">
-                    <h5 class="col-5 text-white text-center py-2 font-weight-bold">
-                        Nearby Banks
-                    </h5>
-                    <div class="col-sm-12">
-
-                        <iframe width="100%" height="250" frameborder="0" style="border:0"
-                            src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCZB0Xb0NHCfdEi8DpZGImUTHT80c9UpBk&q=nearby+banks"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <button class="btn btn-light my-3" onclick="back()">Back</button>
-                </div>
-
-
-
-
-                <div class="col-sm-12 row justify-content-center " id="buttonArea">
-                    <div class="col-md-2 col-sm-6 my-5 row justify-content-center">
-                        <button class="btn col-10 orange-background text-white" id="btn1"
-                            onclick="shareIdea()">Share<br>
-                            your Idea</button>
-
-                    </div>
-                    <div class="col-md-2 my-5 row col-sm-6 justify-content-center">
-                        <button class="btn  col-10 orange-background text-white" id="btn2"
-                            style="vertical-align: center;" onclick="nearbySHG()">Nearby<br> SHG </button>
-                    </div>
-                    <div class="col-md-2 row my-5 col-sm-6 justify-content-center ">
-                        <button class="btn col-10 orange-background text-white" id="btn3"
-                            onclick="nearbyMicroFin()">Nearby<br>
-                            Micro
-                            Finance</button>
-                    </div>
-                    <div class="col-md-2 my-5 row col-sm-6 justify-content-center">
-                        <button class="btn orange-background col-10 text-white" style="vertical-align: center;"
-                            id="btn4" onclick="nearbyInvestors()">Nearby<br> Investor</button>
-                    </div>
-                    <div class="col-md-2 my-5 row justify-content-center col-sm-6">
-                        <button class="btn orange-background col-10 text-white" style="vertical-align: center;"
-                            id="btn5" onclick="nearbyBanks()">Nearby<br> Banks </button>
-                    </div>
-
-                </div>
-
-
-                <div class="col-12"></div>
-                <div class="col-md-2 mb-5 col-sm-6">
-                    <a class="btn  btn-warning col-12" style="vertical-align: center;" href=""> Post a new job</a>
-                </div>
+                <button class="btn btn-light my-3" onclick="back()">Back</button>
             </div>
 
+
+
+
+            <div class="col-sm-12 row justify-content-center " id="buttonArea">
+                <div class="col-md-2 col-sm-6 my-5 row justify-content-center">
+                    <button class="btn col-10 orange-background text-white" id="btn1" onclick="shareIdea()">Share<br>
+                        your Idea</button>
+
+                </div>
+                <div class="col-md-2 my-5 row col-sm-6 justify-content-center">
+                    <button class="btn  col-10 orange-background text-white" id="btn2" style="vertical-align: center;"
+                        onclick="nearbySHG()">Nearby<br> SHG </button>
+                </div>
+                <div class="col-md-2 row my-5 col-sm-6 justify-content-center ">
+                    <button class="btn col-10 orange-background text-white" id="btn3"
+                        onclick="nearbyMicroFin()">Nearby<br>
+                        Micro
+                        Finance</button>
+                </div>
+                <div class="col-md-2 my-5 row col-sm-6 justify-content-center">
+                    <button class="btn orange-background col-10 text-white" style="vertical-align: center;" id="btn4"
+                        onclick="nearbyInvestors()">Nearby<br> Investor</button>
+                </div>
+                <div class="col-md-2 my-5 row justify-content-center col-sm-6">
+                    <button class="btn orange-background col-10 text-white" style="vertical-align: center;" id="btn5"
+                        onclick="nearbyBanks()">Nearby<br> Banks </button>
+                </div>
+
+            </div>
+
+
+            <div class="col-12"></div>
+            <div class="col-md-2 mb-5 col-sm-6">
+                <a class="btn  btn-warning col-12" style="vertical-align: center;" href=""> Post a new job</a>
+            </div>
         </div>
-    </section>
-    
+
+    </div>
+</section>
+
 <section class="agents justify-content-center row my-5 d-none">
 
     <div class="col-sm-12 text-center ">
+        <h2 style="letter-spacing: 2px;">
+
+            VFS Meeting Scheduled On: 1st January 2020
+
+        </h2>
         <h3 style="letter-spacing: 2px;">
 
-            Available Agents
+            VFS Associates
 
         </h3>
         <hr width="40%">
@@ -189,8 +203,8 @@
                         <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
                             <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
                             <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
                                 <a href="#" class="btn text-white btn-small "
                                     style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
                             </div>
@@ -198,8 +212,8 @@
                         <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
                             <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
                             <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
                                 <a href="#" class="btn text-white btn-small "
                                     style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
                             </div>
@@ -207,8 +221,8 @@
                         <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
                             <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
                             <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
                                 <a href="#" class="btn text-white btn-small "
                                     style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
                             </div>
@@ -216,49 +230,8 @@
                         <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
                             <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
                             <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
-                                <a href="#" class="btn text-white btn-small "
-                                    style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="carousel-item text-white">
-                    <div class="row justify-content-center">
-                        <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
-                            <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
-                                <a href="#" class="btn text-white btn-small "
-                                    style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
-                            </div>
-                        </div>
-                        <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
-                            <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
-                                <a href="#" class="btn text-white btn-small "
-                                    style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
-                            </div>
-                        </div>
-                        <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
-                            <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
-                                <a href="#" class="btn text-white btn-small "
-                                    style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
-                            </div>
-                        </div>
-                        <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
-                            <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
                                 <a href="#" class="btn text-white btn-small "
                                     style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
                             </div>
@@ -271,8 +244,8 @@
                         <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
                             <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
                             <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
                                 <a href="#" class="btn text-white btn-small "
                                     style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
                             </div>
@@ -280,8 +253,8 @@
                         <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
                             <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
                             <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
                                 <a href="#" class="btn text-white btn-small "
                                     style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
                             </div>
@@ -289,8 +262,8 @@
                         <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
                             <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
                             <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
                                 <a href="#" class="btn text-white btn-small "
                                     style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
                             </div>
@@ -298,8 +271,49 @@
                         <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
                             <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
                             <div class="card-body">
-                                <h6 class="card-title">Agent 47</h6>
-                                <p class="card-text" style="font-size: 10px;">Details about the Agent</p>
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
+                                <a href="#" class="btn text-white btn-small "
+                                    style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item text-white">
+                    <div class="row justify-content-center">
+                        <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
+                            <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
+                                <a href="#" class="btn text-white btn-small "
+                                    style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
+                            </div>
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
+                            <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
+                                <a href="#" class="btn text-white btn-small "
+                                    style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
+                            </div>
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
+                            <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
+                                <a href="#" class="btn text-white btn-small "
+                                    style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
+                            </div>
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 mx-2 bg-dark">
+                            <img class="card-img-top mt-1" src="/images/agent.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h6 class="card-title">VFS Associate</h6>
+                                <p class="card-text" style="font-size: 10px;">Details about the Associate</p>
                                 <a href="#" class="btn text-white btn-small "
                                     style="background: rgb(255, 77, 89); font-size: 12px;">Contact</a>
                             </div>
@@ -319,5 +333,5 @@
                 <span class="sr-only text-black">Next</span>
             </a>
         </div>
-        </div>
-    </section>
+    </div>
+</section>
