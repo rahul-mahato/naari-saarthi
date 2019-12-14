@@ -330,14 +330,24 @@ footer{
 
 
 <body>
+    <section class="english" lang="en">
         <div class="language text-right py-1" >
-                <p class="lead font-weight-normal text-muted" style="margin-bottom: 0px !important; font-size: 18px; color: #ffffff !important;">View this website in :&nbsp;&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light" lang="hi">हिन्दी</button>
-                    &nbsp;&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">বাঙালি</button>&nbsp;&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">ബംഗാളി</button></p>        
+            <p class="lead font-weight-normal text-muted" style="margin-bottom: 0px !important; font-size: 18px; color: #ffffff !important;">View this website in :&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light" onclick="english()">English</button> &nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light" lang="hi" onclick="hindi()">हिन्दी</button>
+                &nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">বাঙালি</button></p>       
         </div>
+    </section>
+    <section class="hindi d-none" lang="en">
+        <div class="language text-right py-1" >
+            <p class="lead font-weight-normal text-muted" style="margin-bottom: 0px !important; font-size: 18px; color: #ffffff !important;">इस वेबसाइट को देखें :&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light" onclick="english()">English</button> &nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light" lang="hi" onclick="hindi()">हिन्दी</button>
+                &nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">বাঙালি</button></p>       
+        </div>
+    </section>
+        
     <%- body %>
 
-    
-    <footer class="">
+    <section class="english" lang="en">
+
+        <footer class="">
             <div class="container py-5">
                 <div class="row text-left">
                     <div class="col-lg-4">
@@ -374,10 +384,56 @@ footer{
                 </div>
             </div>
         </footer>
+
+    </section>
+
+
+    <section class="hindi d-none" lang="hi">
+
+        <footer class="">
+            <div class="container py-5">
+                <div class="row text-left">
+                    <div class="col-lg-4">
+                            <p class="h4 font-weight-bold mt-2 ">त्वरित सम्पक</p>
+                            <hr  style="background: white;">
+                            <p class="lead font-weight-bold mt-3">पिरामल फाउंडेशन</p>
+                    </div>
+                    <div class="col-lg-4 text-left">
+                            <p class="h4 font-weight-bold mt-2 ">हम तक पहुँचें</p>
+                            <hr   style="background:white;">
+                            <iframe width="100%" height="250" frameborder="0" style="border:0"
+                                src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCZB0Xb0NHCfdEi8DpZGImUTHT80c9UpBk&q=Xavier+Institute+of+Management+(XIMB)"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                    <div class="col-lg-4">
+                            <p class="h4 font-weight-bold mt-2 ">हमसे संपर्क करें</p>
+                            <hr  style="background: white;">
+                            <p class="h5 font-weight-bold">जेवियर इंस्टीट्यूट ऑफ मैनेजमेंट</p>
+                            <p class="lead" style="font-size: 15px;">
+                                    <i class="fas fa-address-book"></i>&nbsp;&nbsp;जेवियर स्क्वायर,<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;भुवनेश्वर-751013, भारत,<br>
+                                    <i class="fas fa-phone"></i>&nbsp;&nbsp;फ़ोन: +91.674-6647777,<br>
+                                    <i class="fas fa-fax"></i>&nbsp;&nbsp;फैक्स:+91.674-2300995
+                            </p>
+                            <div class="row text-left">
+                                <div class="col">
+                                    <a href="naarisaarthi@gmail.com" style="text-decoration: none;"><img src="/images/gmail.png" alt="" class="img-fluid img-responsive d-inline pr-2" width="12%"></a>
+                                    <a href="https://www.youtube.com/channel/UC38Jv1bcM-MlqJi1-5I-XVA/" style="text-decoration: none;"><img src="/images/youtube.png" alt="" class="img-fluid img-responsive d-inline px-2" width="15%"></a>
+                                    <a href="https://www.instagram.com/enigmatix64?r=nametag" style="text-decoration: none;"><img src="/images/instagram.png" alt="" class="img-fluid img-responsive d-inline px-2" width="13%"></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </section>
+   
         
         
-    
-        <aside class="chat-bot fixed-bottom">
+        <section class="english" lang="en">
+            <aside class="chat-bot fixed-bottom">
                 <div id="accordian" role="tablist">
             <div class="card" style="background: red !important;">
                     <div class="card-header" id="heading1">
@@ -401,6 +457,34 @@ footer{
                     </div>
                 </div>
         </aside>
+    </section>
+    <section class="hindi d-none" lang="hi">
+        <aside class="chat-bot fixed-bottom">
+            <div id="accordian" role="tablist">
+        <div class="card" style="background: red !important;">
+                <div class="card-header" id="heading1">
+                    <h5 class="mb-0">
+                    <div href="#collapse1" data-toggle="collapse" data-parent="#accordian">
+                        <i class="fa fa-arrow-circle-down"></i>&nbsp;हम से बात करे
+                    </div>
+                    </h5>
+                </div>
+                <div id="collapse1" class="collapse">
+                    <div class="card-body" style="background: white;">
+                    <div style="background: white; width: 100%;">
+                        <img src="/images/girl.png" class="img-fluid rounded-circle" alt="" width="12%">
+                        <button class="btn btn-primary mb-5 pb5 ml-2 mt-4" style="border:1px; border-radius:5px;">नमस्ते</button>
+                        <div class="enter-text">
+                            <input type="text" placeholder="यहाँ लिखें" class="mt-1"><button class="btn btn-sm btn-danger ml-2 pt-1">भेजें</button>
+                        </div>
+                    </div>    
+                </div>
+                </div>
+                </div>
+            </div>
+    </aside>
+</section>
+        
 <script>
 AOS.init();
 </script>
@@ -543,6 +627,32 @@ AOS.init();
                 alert("Your idea has been shared : " + text.value);
                 console.log(idea);
     
+            }
+
+            function hindi(){
+                var x = document.querySelectorAll(".english");
+                for (i = 0; i < x.length; i++) {
+                    x[i].classList.add('d-none');
+                }
+                
+                var y = document.querySelectorAll(".hindi");
+                for (i = 0; i < x.length; i++) {
+                    y[i].classList.remove('d-none');
+                }
+                
+            }
+
+            
+            function english(){
+                var x = document.querySelectorAll(".english");
+                for (i = 0; i < x.length; i++) {
+                    x[i].classList.remove('d-none');
+                }
+                
+                var y = document.querySelectorAll(".hindi");
+                for (i = 0; i < x.length; i++) {
+                    y[i].classList.add('d-none');
+                }
             }
         </script>
 </body>
