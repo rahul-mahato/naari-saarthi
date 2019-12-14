@@ -21,7 +21,8 @@ router.get('/index', (req, res) => {
 // });
 router.get('/sectors',(req,res)=> res.render('sectors'));
 router.get('/training',(req,res)=> res.render('training'));
-router.get('/training',(req,res)=> res.render('training'));
+router.get('/seller-zone',(req,res)=>res.render('seller-zone'));
+router.get('/e-corner',(req,res)=>res.render('e-corner'));
 
 //Dashboard
 router.get('/dashboard', (req, res) => {
