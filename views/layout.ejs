@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Naari Saarthi</title>
+    <link rel="stylesheet" href="./assets/css/hero.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    
+
+</head>
+
+<style>
+
+.hero-area{
+    background: url('/images/hero.jpg');
+    background-size: cover;
+    position: relative;
+}
+.dash-hero-area{
+    background: url('/images/dash.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.overlay{
+    background: rgba(255,255,255,0.7) ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.description{
+    width: 70%;
+    margin: 0px;
+    margin-right: 0px !important;
+    float: left;
+}
+aside{
+    width: 20%;
+    float: right;
+    background: rgba(66, 135, 245,0.8);
+    margin-right: 5px !important;
+}
+@media (max-width: 768px){
+        
+    .description{
+        width: 100%;
+        margin: 0px;
+        float: none;
+        text-align: center !important;
+        align-content: center !important;
+        align-items: center !important;
+    }
+    aside{
+        width: 100%;
+        float: none;
+        border-right: 5px solid white;
+        border-left: 5px solid white;
+        background: rgba(66, 135, 245,0.8);
+    }
+    }
+
+
+#Notification{
+    clip-path: circle(70%);
+    background: black;
+    
+}
+
+.des-not{
+    display: inline-block;
+} 
+
+.achieve{
+    background:linear-gradient(rgba(255, 79, 88, 0.7),rgba(255, 79, 88, 0.7)),url('/images/suc.jpeg');
+    background-size:cover ;
+    color: white;
+}
+
+.profile{
+    clip-path: circle(30%);
+}
+
+@media (max-width: 768px){
+    .profile{
+        margin-top: 30px !important;
+        width: 80%;
+    } 
+    .space-dash{
+        display: none;
+    }
+    
+    }
+
+.card{
+    background:#222326 !important; 
+    color: white;
+}
+
+@media(max-width:768)
+{
+    
+    
+}
+
+.card .btn-primary{
+    background: #FF4F58FF !important;
+    border: none;
+}
+
+
+.recom{
+    background: #FF4F58FF !important;
+    color: white;
+}
+
+.rj{
+    background: #222326 !important;
+    color: white;
+}
+
+.fa-trophy{
+    background-color: #FF4F58FF !important;
+}
+
+.cert{
+    background-color: #FF4F58FF !important;
+    color: white;
+}
+
+.card-cert{
+    background: white;
+    color: #FF4F58FF !important;
+    margin-bottom: 2px;
+}
+
+.uploads{
+    background: #222326;
+    color: white;
+}
+
+input[type="file"]::-webkit-file-upload-button{
+    background: white;
+    color: #FF4F58FF;
+    border-radius: 3px; 
+    border: none;
+    padding: 8px;
+}
+
+.t-in-d{
+    background: linear-gradient(rgba(255, 255, 255, 0.514),rgba(255, 255, 255, 0.7)),url('/images/trainingind.png');
+    background-size: cover;
+}
+
+.t-overlay{
+    background:rgba(255,255,255,0.6);
+    z-index: 12;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+.train{
+    background: #EEEEEE;
+}
+
+footer{
+    background: #222326;
+    color: white;
+}
+
+.language{
+    background: #ff5e62;
+    color: #ffffff;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+#meet-team{
+    background: #ff5e62;
+    color: #ffffff;
+}
+
+  #meet-team img{
+    margin-top: -50px;
+}
+
+#meet-team .fab{
+    color: #ffffff;
+}
+
+#meet-team .card:hover{
+    background: #ff5e62;
+    color: #ffffff;
+    transform: scale(1.1);
+    margin: 5px;
+}
+@media only screen and (max-width: 768px) {
+    
+#meet-team .row{
+    margin: 5px;
+}
+
+#meet-team .card:hover{
+        background: #ff5e62;
+        color: #ffffff;
+        transform: scale(1.1);
+        margin: 5px;
+}
+}
+
+.info-header {
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px #ddd solid; }
+
+    @media only screen and (max-width: 768px) {
+    .chat-bot{
+        display: none;
+    }
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .signup-background{
+        background: linear-gradient(rgba(0, 0, 0, 0.500),rgba(0, 0, 0, 0.500)),url('/images/registration4.jpg') no-repeat ;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+
+    }
+    .ecorner-orange-background{
+        background:linear-gradient(rgba(255, 79, 88, 0.685),rgba(255, 79, 88, 0.685)),url('/images/registration4.jpg') no-repeat ;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .orange-background{
+        background: rgb(255,79,88);
+
+    }
+    .sector-orange-background{
+        background: linear-gradient(rgba(255, 79, 88, 0.685),rgba(255, 79, 88, 0.685)),url('/images/womenback2.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .seller-orange-background{
+        background:  linear-gradient(rgba(255, 79, 88, 0.585),rgba(255, 79, 88, 0.585)),url('/images/womenback3.jpg') no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+
+    .login-background{
+        background: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.708)),url('/images/login1.jpg')  no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size:cover ;
+        height: 100%;
+    }
+    .text-font{
+        /* color:  rgb(255,79,88); */
+        font-family: sans-serif;
+        letter-spacing: 3px;
+    }
+
+    button{
+        letter-spacing: 1px;
+    }
+
+
+    input[type=text]{
+        letter-spacing: 2px;
+        
+    }
+
+    input[type=email]{
+        letter-spacing: 2px;
+    }
+
+    input[type=password]{
+        letter-spacing: 2px;
+    }
+
+    select{
+        letter-spacing: 2px;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    .training-details{
+    background: #FF4F58FF !important;
+    color: #FF4F58FF;
+}
+
+</style>
+
+
+<body>
+        <div class="language text-right py-1" >
+                <p class="lead font-weight-normal text-muted" style="margin-bottom: 0px !important; font-size: 18px; color: #ffffff !important;">View this website in :&nbsp;&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light" lang="hi">हिन्दी</button>
+                    &nbsp;&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">বাঙালি</button>&nbsp;&nbsp;&nbsp;<button class="btn btn-sm border-bottom transparent text-light">ബംഗാളി</button></p>        
+        </div>
+    <%- body %>
+
+    
+    <footer class="">
+            <div class="container py-5">
+                <div class="row text-left">
+                    <div class="col-lg-4">
+                            <p class="h4 font-weight-bold mt-2 ">Quick Links</p>
+                            <hr  style="background: white;">
+                            <p class="lead font-weight-bold mt-3">Piramal Foundation</p>
+                    </div>
+                    <div class="col-lg-4 text-left">
+                            <p class="h4 font-weight-bold mt-2 ">Reach Us At</p>
+                            <hr   style="background:white;">
+                            <iframe width="100%" height="250" frameborder="0" style="border:0"
+                                src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCZB0Xb0NHCfdEi8DpZGImUTHT80c9UpBk&q=Xavier+Institute+of+Management+(XIMB)"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                    <div class="col-lg-4">
+                            <p class="h4 font-weight-bold mt-2 ">Contact Us</p>
+                            <hr  style="background: white;">
+                            <p class="h5 font-weight-bold">Xavier Institute of Management</p>
+                            <p class="lead" style="font-size: 15px;">
+                                    <i class="fas fa-address-book"></i>&nbsp;&nbsp;Xavier Square,<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bhubaneswar-751013, India,<br>
+                                    <i class="fas fa-phone"></i>&nbsp;&nbsp;Phone: +91.674-6647777,<br>
+                                    <i class="fas fa-fax"></i>&nbsp;&nbsp;Fax:+91.674-2300995
+                            </p>
+                            <div class="row text-left">
+                                <div class="col">
+                                    <a href="naarisaarthi@gmail.com" style="text-decoration: none;"><img src="/images/gmail.png" alt="" class="img-fluid img-responsive d-inline pr-2" width="12%"></a>
+                                    <a href="https://www.youtube.com/channel/UC38Jv1bcM-MlqJi1-5I-XVA/" style="text-decoration: none;"><img src="/images/youtube.png" alt="" class="img-fluid img-responsive d-inline px-2" width="15%"></a>
+                                    <a href="https://www.instagram.com/enigmatix64?r=nametag" style="text-decoration: none;"><img src="/images/instagram.png" alt="" class="img-fluid img-responsive d-inline px-2" width="13%"></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+    
+        <aside class="chat-bot fixed-bottom">
+                <div id="accordian" role="tablist">
+            <div class="card" style="background: red !important;">
+                    <div class="card-header" id="heading1">
+                        <h5 class="mb-0">
+                        <div href="#collapse1" data-toggle="collapse" data-parent="#accordian">
+                            <i class="fa fa-arrow-circle-down"></i>&nbsp;Chat With Us
+                        </div>
+                        </h5>
+                    </div>
+                    <div id="collapse1" class="collapse">
+                        <div class="card-body" style="background: white;">
+                        <div style="background: white; width: 100%;">
+                            <img src="/images/girl.png" class="img-fluid rounded-circle" alt="" width="12%">
+                            <button class="btn btn-primary mb-5 pb5 ml-2 mt-4" style="border:1px; border-radius:5px;">Hello There</button>
+                            <div class="enter-text">
+                                <input type="text" placeholder="Text Here" class="mt-1"><button class="btn btn-sm btn-danger ml-2 pt-1">Send</button>
+                            </div>
+                        </div>    
+                    </div>
+                    </div>
+                    </div>
+                </div>
+        </aside>
+<script>
+AOS.init();
+</script>
+
+<script> 
+        function video()
+        {
+            document.querySelector('.blog-upload-row').classList.add('d-none');
+            document.querySelector('#uploads').style.background= '#FF4F58FF';
+            document.querySelector('.hr').style.background='white';
+            document.querySelector('.upload-row').classList.remove('d-none');
+            document.querySelector('.upload-text').textContent='Upload Your Videos Here'
+        }
+        function picture()
+        {
+            
+            document.querySelector('.blog-upload-row').classList.add('d-none');
+            document.querySelector('#uploads').style.background= '#FF4F58FF';
+            document.querySelector('.hr').style.background='white';
+            document.querySelector('.upload-row').classList.remove('d-none');
+            document.querySelector('.upload-text').textContent='Upload Your Pictures Here'
+        }
+        function tvideo()
+        {
+            document.querySelector('.blog-upload-row').classList.add('d-none');
+            document.querySelector('#uploads').style.background= '#FF4F58FF';
+            document.querySelector('.hr').style.background='white';
+            document.querySelector('.upload-row').classList.remove('d-none');
+            document.querySelector('.upload-text').textContent='Upload Your Training Videos Here'
+        }
+        function blog()
+        {
+            document.querySelector('.upload-row').classList.add('d-none');
+            document.querySelector('.blog-upload-row').classList.remove('d-none');
+        }
+        function vfs()
+        {
+            document.querySelector('.vfs-cau').classList.add('d-none');
+            document.querySelector('.vfs-check').classList.remove('d-none');
+        }
+        function vfs_submit()
+        {
+            document.querySelector('.vfs-check').classList.add('d-none');
+            document.querySelector('.vfs-sure').classList.remove('d-none');
+        }
+        function pottery()
+        {
+            document.querySelector('.uploads').classList.remove('bg-success');
+            document.querySelector('.uploads').classList.remove('bg-danger');
+            document.querySelector('.uploads').classList.add('bg-warning');
+            document.querySelector('.uploads').style.color='white';
+            document.querySelector('.stitching').classList.add('d-none');
+            document.querySelector('.pottery').classList.remove('d-none');
+            document.querySelector('.others').classList.add('d-none');
+        }
+        
+        function stitch()
+        {
+            
+            document.querySelector('.uploads').classList.remove('bg-success');
+            document.querySelector('.uploads').classList.remove('bg-warning');
+            document.querySelector('.uploads').classList.add('bg-danger');
+            document.querySelector('.uploads').style.color='white';
+            document.querySelector('.pottery').classList.add('d-none');
+            document.querySelector('.stitching').classList.remove('d-none'); 
+            document.querySelector('.others').classList.add('d-none');
+        }
+
+        
+        function oth()
+        {   
+            document.querySelector('.uploads').classList.remove('bg-danger');
+            document.querySelector('.uploads').classList.remove('bg-warning');
+            document.querySelector('.uploads').classList.add('bg-success');
+            document.querySelector('.uploads').style.color='white';
+            document.querySelector('.stitching').classList.add('d-none');
+            document.querySelector('.pottery').classList.add('d-none');
+            document.querySelector('.others').classList.remove('d-none');
+        }
+    </script>
+    <script>
+            //    functions here
+            var backdiv = document.getElementById('funcdiv');
+            text = document.getElementById('ideaText');
+    
+            var buttonArea = document.getElementById('buttonArea');
+            var btn5 = document.getElementById('btn5');
+            var sharediv = document.getElementById('ShareYourIdea');
+            var nearbyShg = document.getElementById('NearbySHG');
+            var nearbyMf = document.getElementById('NearbyMF');
+            var nearbyInv = document.getElementById('NearbyINV');
+            var nearbyBank = document.getElementById('NearbyBNK');
+    
+            function shareIdea() {
+                backdiv.classList.remove('bg-dark');
+                backdiv.classList.add('ecorner-orange-background');
+                sharediv.classList.remove('d-none');
+                buttonArea.classList.add('d-none');
+    
+            }
+            function nearbySHG() {
+                backdiv.classList.remove('bg-dark');
+                backdiv.classList.add('ecorner-orange-background');
+                nearbyShg.classList.remove('d-none');
+                buttonArea.classList.add('d-none');
+    
+            }
+            function nearbyMicroFin() {
+                backdiv.classList.remove('bg-dark');
+                backdiv.classList.add('ecorner-orange-background');
+                nearbyMf.classList.remove('d-none');
+                buttonArea.classList.add('d-none');
+            }
+            function nearbyInvestors() {
+                backdiv.classList.remove('bg-dark');
+                backdiv.classList.add('ecorner-orange-background');
+                nearbyInv.classList.remove('d-none');
+                buttonArea.classList.add('d-none');
+            }
+            function nearbyBanks() {
+                backdiv.classList.remove('bg-dark');
+                backdiv.classList.add('ecorner-orange-background');
+                nearbyBank.classList.remove('d-none');
+                buttonArea.classList.add('d-none');
+            }
+            function back() {
+                backdiv.classList.add('bg-dark');
+                backdiv.classList.remove('ecorner-orange-background');
+                sharediv.classList.add('d-none');
+                NearbySHG.classList.add('d-none');
+                nearbyMf.classList.add('d-none');
+                nearbyBank.classList.add('d-none');
+                nearbyInv.classList.add('d-none');
+    
+                buttonArea.classList.remove('d-none');
+            }
+    
+            function ideashare(e,idea){
+                
+                alert("Your idea has been shared : " + text.value);
+                console.log(idea);
+    
+            }
+        </script>
+</body>
+</html>

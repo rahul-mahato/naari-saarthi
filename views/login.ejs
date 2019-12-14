@@ -1,0 +1,50 @@
+<section class="navbar-head">
+    <nav class="navbar navbar-expand-md navbar-light py-3">
+        <div class="container">
+            <a href="/" class="navbar-brand" style="text-decoration: none;"><img src="/images/001.png" alt="" srcset="" width="7%" class="px-2">Naari Saarthi</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto w-100">
+                    <li class="nav-item pl-2"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item pl-2"><a href="#" class="nav-link">Recruiters Dashboard</a></li>
+                    <li class="nav-item pl-2"><a href="/users/login" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="/users/register" class="nav-link">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+
+
+<section class="login-form" style="height: 100vh;">
+        <div class="row py-5 login-background ">
+            
+                <div class=" col-sm-12 col-lg-4 mt-4 ml-5 text-center bg-white">
+                    <img src="../images/login3.png" class="mt-4" style="width: 200px;height: auto;">
+                    <h1 class="py-4  text-font"><b> Login Here</b></h1>
+                    <% include ./partials/messages %>
+                    <form method="POST" action="/users/login">
+                        <div class="input-group my-2 row">
+                            <label class=" col-2" for="email"><i class="fa  fa-envelope-o fa-2x px-1 "  style="color: black;"></i></label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="input-group my-2 row">
+        
+                            <label for="password" class="col-2"><i class="fa fa-key  fa-2x px-1" style="color: black;" aria-hidden="true"></i></label>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" style="background: rgb(255, 77, 89);" class="text-white btn btn-light my-3 border col-4">Submit</button>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-lg-7 align-self-center text-center text-white">
+                    <h3 style="font-family: 'Times New Roman', Times, serif; ">
+        
+                        “ My true potential had more to do with my willingness to struggle than with my past and present circumstances. ”
+                    </h3>    
+                </div>
+            </div>
+</section>

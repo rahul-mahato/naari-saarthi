@@ -1,0 +1,298 @@
+<!-- <p id="demo"></p> -->
+
+<section id="Navbar">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Exigency Network</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/about-us-loggedout" class="nav-link">Explore Us</a>
+                    </li>
+                    <a href="/users/login" class="nav-link">Log In</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/users/Register" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+<section id="hero-area" class="py-3">
+    <div class="primary-overlay text-white">
+        <div class="container">
+            <div id="hero-banner" class="row w-100 align-item-center">
+                <div class="col">
+                    <div class="text-center align-self-center align-center">
+                        <img src="/images/hero-area-banner-icon.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="text-center align-self-center align-center">
+                        <h1>Welcome To Exigency Network</h1>
+                        <p class="lead">A safe insurance to your comforting drives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class=" row justify-content-center">
+        <div class="col-md-4 col-sm-12 my-5">
+            <form action="/location/webAuth" method="post">
+                <div class="col-10 my-2  mx-auto ">
+                    <input name="authNo" type="text" class="form-control rounded" placeholder="Authentication Number" onclick="getLocation()">
+                    <input type="text" name="lat" id="latitude" class="form-control rounded" placeholder="Latitude">
+                    <input type="text" name="long" id="longitude" class="form-control rounded" placeholder="longitude">
+
+
+                </div>
+                <div class="col-12 mx-auto text-center">
+                    <button type="submit" class=" btn btn-success">Need Help</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section id="crash-flash" class="py-3">
+    <div class="container">
+        <div id="crash-flash-row" class="row justify-content-center text-center">
+            <div class="col-lg-6 col-md-4 align-self-center text-lg-right">
+                <img src="/images/crash-flash-banner.png" alt="" class="img-fluid w-75">
+            </div>
+            <div class="col-lg-6 col-md-8 align-self-center text-lg-left">
+                <h1>Worried Riding Places?</h1>
+                <p class="lead">Now no more worries with exigency network</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="py-4">
+    <div class="container text-center">
+        <div id="feature-header" class="d-block row justify-content-center pt-4 mb-3">
+            <h2>
+                Features
+            </h2>
+            <hr style="color: #000000; width:40%;" />
+        </div>
+        <div class="row pb-3 justify-content-center">
+            <div class="col-lg-4 col-md-4 align-self-center">
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="fas fa-map-marker-alt fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Autonomous GPS Monitoring Of Your Vehicle</h6>
+                    </div>
+                </div>
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="far fa-hospital fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Pinned Nearby Hospitals</h6>
+                    </div>
+                </div>
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="fab fa-500px fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Vibration Sensor For Impact & Speed</h6>
+                    </div>
+                </div>
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="fas fa-tachometer-alt fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Speed Monitoring With OverSpeeding Waring</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 align-self-center">
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="fas fa-bell fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Embedded Alarm System</h6>
+                    </div>
+                </div>
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="fas fa-ambulance fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Notification To Nearby Hospitals With Location</h6>
+                    </div>
+                </div>
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="far fa-envelope-open fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Notification To Emergency Contacts</h6>
+                    </div>
+                </div>
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="fas fa-universal-access fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">No Help Required</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 align-self-center">
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="fas fa-user-secret fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Notification To Nearby Police Station</h6>
+                    </div>
+                </div>
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="fas fa-database fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Live Location Updated Continuously</h6>
+                    </div>
+                </div>
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="fas fa-chart-line fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Analysis Of Risk Prone Zone</h6>
+                    </div>
+                </div>
+                <div class="icon-box py-4">
+                    <div>
+                        <span><i class="fas fa-map-marker-alt fa-2x"></i></span>
+                    </div>
+                    <div>
+                        <h6 class="d-inline pl-2">Autonomous GPS Monitoring Of Your Vehicle</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="meet-team" class="text-center py-5">
+    <div class="container py-3">
+        <div class="row justify-content-center mb-3">
+            <div id="team-header" class="py-4 mb-5">
+                <h1 class="display3">Meet The Creators</h1>
+                <p class="lead text-center">We are The ones</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/images/pratyush.jpg" alt="" class="img-fluid rounded-circle w-50 pb-2">
+                        <h3>Pratyush Kumar</h3>
+                        <h6 class="text-muted">IOT Developer</h6>
+                        <p>awdklawnd akwndlk awndanwkld nlawn dknalw dnalwndnalndkanldwkawnldn awkndlkanwndl anwdk nawln dknawlnd la</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center pb-2">
+                        <div class="p-4">
+                            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        </div>
+                        <div class="p-4">
+                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <div class="p-4">
+                            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/images/rahul.jpg" alt="" class="img-fluid rounded-circle w-50 pb-2">
+                        <h3>Rahul Mahato</h3>
+                        <h6 class="text-muted">Web Developer</h6>
+                        <p>Something about this developer comes here </p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center pb-2">
+                        <div class="p-4">
+                            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        </div>
+                        <div class="p-4">
+                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <div class="p-4">
+                            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/images/debraj.jpg" alt="" class="img-fluid rounded-circle w-50 pb-2">
+                        <h3>Debraj Sengupta</h3>
+                        <h6 class="text-muted">Web Developer</h6>
+                        <p>awdklawnd akwndlk awndanwkld nlawn dknalw dnalwndnalndkanldwkawnldn awkndlkanwndl anwdk nawln dknawlnd la</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center pb-2">
+                        <div class="p-4">
+                            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        </div>
+                        <div class="p-4">
+                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <div class="p-4">
+                            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    var x = document.getElementById("latitude");
+    var y = document.getElementById("longitude");
+    // var d = document.getElementById("demo");
+
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.value = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        // d.innerHTML = "Latitude: " + position.coords.latitude +
+        //     "<br>Longitude: " + position.coords.longitude;
+        x.value = position.coords.latitude;
+        y.value = position.coords.longitude;
+    }
+</script>
