@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
 router.get('/index', (req, res) => {
     res.render('welcome');
 })
+
 //explore-us
 
 //loggedin home
@@ -19,6 +20,7 @@ router.get('/index', (req, res) => {
 //         email: req.user.email
 //     });
 // });
+router.get('/recruiter',(req,res)=>res.render('recruiter'));
 router.get('/sectors',(req,res)=> res.render('sectors'));
 router.get('/training',(req,res)=> res.render('training'));
 router.get('/seller-zone',(req,res)=>res.render('seller-zone'));
