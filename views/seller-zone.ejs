@@ -59,7 +59,7 @@
             <div class="my-4 row justify-content-center">
 
                 <div class="input-group  col-md-5 mx-3 mt-5 col-sm-10 row">
-                    
+
 
 
                     <select id="product" class="form-control" name="product">
@@ -87,17 +87,18 @@
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="inputGroupFile01"
                             aria-describedby="inputGroupFileAddon01">
-                        <label class="custom-file-label" for="inputGroupFile01" style="letter-spacing: 1px;">Upload
+                        <label class="custom-file-label" id="fileUploadLabel" for="inputGroupFile01"
+                            style="letter-spacing: 1px;">Upload
                             Sample Pictures</label>
                     </div>
                 </div>
             </div>
-            
+
         </form>
-                <div class="col-md-12 mb-5 mt-2">
-                    <button class="btn " style="background: rgb(255, 77, 89); color: whitesmoke;"
-                        onclick="SellerSubmitted()">Submit</button>
-                </div>
+        <div class="col-md-12 mb-5 mt-2">
+            <button class="btn " style="background: rgb(255, 77, 89); color: whitesmoke;"
+                onclick="SellerSubmitted()">Submit</button>
+        </div>
     </div>
 
     <div class="d-none row justify-content-center container py-5" id="agents">
@@ -243,12 +244,18 @@
 </section>
 
 <script>
-    var ag= document.getElementById('agents');
+    var ag = document.getElementById('agents');
     var product = document.getElementById('product')
-    function SellerSubmitted(){
+    function SellerSubmitted() {
         alert("Product added successfully . Please select an VFS associate now .");
         ag.classList.remove('d-none');
-        
+
     }
 
+fileLabel = document.getElementById('');
+    $("#inputGroupFile01").change(function () {
+        filename = this.files[0].name
+        console.log(filename);
+       $("#fileUploadLabel").html(filename) ;
+    });
 </script>
